@@ -356,6 +356,26 @@ System.out.printf("%s percebe que a porta para as Terras Proibidas não é apena
                                 "habilidades e executarem estratégias com precisão para avançar com sucesso no jogo. A sensação de conquista ao superar cada desafio sem errar é recompensadora para os amantes do perfeccionismo.\n\n"
                         );
 
+byte tentativas = 3;
+
+do {
+System.out.print("Insira a senha: ");
+String senha = sc.next();
+ 
+ 
+ 
+if (tentativas == 0) {
+System.out.printf("Com a terceira tentativa fracassada, a porta se fecha irrevogavelmente, impedindo o acesso às Terras Proibidas. O destino de RustavaleN permanece\n" +
+"envolto em trevas, enquanto a esperança de %s desvanece lentamente.\n\n"
+, personagemString
+);
+
+System.out.println("<-- FIM DE JOGO -->");
+
+break;
+}
+} while (tentativas != 0);
+
                         break;
                     case 3:
                         System.out.println("<-- PERSONAGENS -->\n");
