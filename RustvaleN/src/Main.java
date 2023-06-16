@@ -563,6 +563,175 @@ public class Main {
                                         , personagemString, personagemString
                                 );
 
+                                // CAPÍTULO 3 - BATALHA FINAL
+                                System.out.printf("Após uma longa jornada repleta de desafios e superações, %s finalmente alcança a entrada da caverna onde repousa o temível Dragão Sombrio.\n" +
+                                                "A atmosfera ao redor é densa e sombria, repleta de um silêncio assustador.\n\n"
+                                        , personagemString
+                                );
+
+                                System.out.printf("Ao enfrentarem o Dragão Sombrio, %s compreendem a terrível realidade: qualquer ataque que sofrerem das garras afiadas ou das chamas\n" +
+                                                "abrasadoras do dragão resultará em morte instantânea. Cientes do risco iminente, %s sabe que essa batalha não permite erros ou hesitação. Com seus corações\n" +
+                                                "cheios de coragem, %s se prepara para o confronto final, determinado a encontrar uma estratégia para superar o inimigo indomável e restaurar a luz ao mundo."
+                                        , personagemString, personagemString, personagemString
+                                );
+
+                                System.out.println("<-- INÍCIO DA BATALHA -->\n");
+
+                                System.out.printf("No início da batalha, o Dragão Sombrio lança-se ferozmente contra %s. Suas garras afiadas cortam o ar com velocidade impressionante,\n" +
+                                                "enquanto suas chamas devoradoras ameaçam consumir tudo ao seu redor. %s, prepara para o confronto épico, se esquiva com agilidade e lança sua magia e\n" +
+                                                "ataques contra a poderosa criatura.\n\n"
+                                        , personagemString, personagemString
+                                );
+
+                                System.out.println("<-- PREPARAÇÃO DO ATAQUE -->\n");
+
+                                if (personagem == 1) {
+                                    System.out.println(perguntasClarus[0]);
+                                    System.out.println(respostasClarus[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("c")) {
+                                        System.out.println("Aria concentra sua energia e lança um poderoso feitiço de luz em direção ao Dragão Sombrio. Um raio luminoso corta os céus, buscando atingir o ponto fraco da\n" +
+                                                "criatura. Com precisão e determinação, o feitiço se choca contra as escamas negras do dragão, causando uma explosão de luz e enfraquecendo sua defesa.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+
+                                    System.out.println("Aria se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasClarus[1]);
+                                    System.out.println(respostasClarus[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("b")) {
+                                        System.out.println("Aria, envolta em uma determinação feroz, convoca todas as suas habilidades e poderes mágicos para um último ataque contra o Dragão Sombrio. Com uma explosão de energia luminosa,\n" +
+                                                "ela lança um feitiço poderoso que atravessa as defesas do monstro e atinge em cheio seu ponto fraco.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+
+                                }
+                                else if (personagem == 2) {
+                                    System.out.println(perguntasClarus[0]);
+                                    System.out.println(respostasClarus[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("c")) {
+                                        System.out.println("Leon, com seus dardos afiados e mira precisa, concentra-se em seu próximo alvo: o Dragão Sombrio. Com um movimento rápido, ele lança uma salva de dardos em direção ao\n" +
+                                                "imponente monstro. Os dardos cortam o ar e atingem o corpo escamoso do dragão, perfurando sua pele resistente. O dragão solta um rugido de dor, mas permanece de pé, pronto para\n" +
+                                                "retaliar.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+
+                                    System.out.println("Leon se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasClarus[1]);
+                                    System.out.println(respostasClarus[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("b")) {
+                                        System.out.println("Com um último arremesso certeiro, Leon lança seus dardos com maestria contra o corpo do Dragão Sombrio. Os projéteis perfuram as escamas sombrias, causando uma\n" +
+                                                "reação explosiva.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+                                }
+                                else {
+                                    System.out.println(perguntasClarus[0]);
+                                    System.out.println(respostasClarus[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("c")) {
+                                        System.out.println("\n" +
+                                                "Com seu livro de magias em mãos, Maya, a Maga das Palavras, concentra todo o seu poder para lançar um feitiço devastador contra o Dragão Sombrio. Ela recita palavras arcanas com\n" +
+                                                "determinação, enquanto símbolos mágicos se formam no ar ao seu redor. Em um estonteante espetáculo de magia, poderosas rajadas de energia elemental são disparadas em direção ao\n" +
+                                                "dragão, envolvendo-o em um redemoinho de fogo, gelo e relâmpagos.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+
+                                    System.out.println("Maya se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasClarus[1]);
+                                    System.out.println(respostasClarus[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("b")) {
+                                        System.out.println("Ela entoa encantamentos ancestrais e canaliza seu poder, criando uma esfera de energia pura em suas mãos. Com um gesto audacioso, Maya lança a esfera diretamente\n" +
+                                                "no coração do monstro.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.printf("O Dragão Sombrio, com sua imponente presença, lança um ataque avassalador contra %s. As chamas ardentes do Dragão Sombrio envolvem %s, consumindo sua força vital.\n" +
+                                                        "Apesar de seus esforços para resistir, %s é incapaz de suportar o poder avassalador do dragão. Seu corpo é consumido pelo fogo, e %s cai derrotada diante do\n" +
+                                                        "imponente monstro.\n"
+                                                , personagemString, personagemString, personagemString, personagemString
+                                        );
+                                        vidaPersonagem -= 100;
+
+                                        System.out.printf("%s perdeu 100 pontos de vida.\n", personagemString);
+                                    }
+                                }
+
+                                System.out.printf("O Dragão Sombrio solta um rugido estrondoso enquanto seu corpo é envolto em chamas purificadoras, que consomem sua essência maligna. O dragão\n" +
+                                                "cambaleia e cai derrotado, dissipando-se em uma névoa sombria. %s, exausta, mas vitoriosa, observa o resultado de sua coragem e determinação, sabendo que\n" +
+                                                "sua bravura foi crucial para trazer a luz de volta a RustvaleN.\n\n"
+                                        , personagemString
+                                );
+
+
 
 
                             } else {
