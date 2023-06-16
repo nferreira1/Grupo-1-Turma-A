@@ -730,35 +730,33 @@ public class Main {
                                                 "sua bravura foi crucial para trazer a luz de volta a RustvaleN.\n\n"
                                         , personagemString
                                 );
-if (personagem == 2) {
-System.out.printf("O Amuleto da Luz é finalmente recuperado das garras do monstro, e seu brilho irradia esperança e renovação.\n" +
-"RustvaleN, outrora mergulhada em trevas e desespero, agora é banhada pela luz radiante do amuleto sagrado. A escuridão é dissipada, revelando a beleza e a\n" +
-"prosperidade da terra que há muito tempo estava perdida.\n\n" +
-"%s celebra sua vitória, sabendo que sua coragem e sacrifício trouxeram a redenção para RustvaleN. As pessoas da terra se unem em gratidão,\n" +
-"reconhecendo o herói que o libertou das garras do mal.\n\n" +
-"Agora, com a luz restaurada, RustvaleN floresce mais uma vez. O legado do %s viverá para sempre na memória de todos, lembrando-os de que, mesmo\n" +
-"diante das mais sombrias adversidades, a esperança e a determinação podem vencer todas as trevas.\n\n"
-,personagemString, personagemString
-);
-} else {
-System.out.printf("O Amuleto da Luz é finalmente recuperado das garras do monstro, e seu brilho irradia esperança e renovação.\n" +
-"RustvaleN, outrora mergulhada em trevas e desespero, agora é banhada pela luz radiante do amuleto sagrado. A escuridão é dissipada, revelando a beleza e a\n" +
-"prosperidade da terra que há muito tempo estava perdida.\n\n" +
-"%s celebra sua vitória, sabendo que sua coragem e sacrifício trouxeram a redenção para RustvaleN. As pessoas da terra se unem em gratidão,\n" +
-"reconhecendo o heroína que o libertou das garras do mal.\n\n" +
-"Agora, com a luz restaurada, RustvaleN floresce mais uma vez. O legado do %s viverá para sempre na memória de todos, lembrando-os de que, mesmo\n" +
-"diante das mais sombrias adversidades, a esperança e a determinação podem vencer todas as trevas.\n\n"
-,personagemString, personagemString
-);
-}
+                                if (personagem == 2) {
+                                    System.out.printf("O Amuleto da Luz é finalmente recuperado das garras do monstro, e seu brilho irradia esperança e renovação.\n" +
+                                                    "RustvaleN, outrora mergulhada em trevas e desespero, agora é banhada pela luz radiante do amuleto sagrado. A escuridão é dissipada, revelando a beleza e a\n" +
+                                                    "prosperidade da terra que há muito tempo estava perdida.\n\n" +
+                                                    "%s celebra sua vitória, sabendo que sua coragem e sacrifício trouxeram a redenção para RustvaleN. As pessoas da terra se unem em gratidão,\n" +
+                                                    "reconhecendo o herói que o libertou das garras do mal.\n\n" +
+                                                    "Agora, com a luz restaurada, RustvaleN floresce mais uma vez. O legado do %s viverá para sempre na memória de todos, lembrando-os de que, mesmo\n" +
+                                                    "diante das mais sombrias adversidades, a esperança e a determinação podem vencer todas as trevas.\n\n"
+                                            ,personagemString, personagemString
+                                    );
+                                } else {
+                                    System.out.printf("O Amuleto da Luz é finalmente recuperado das garras do monstro, e seu brilho irradia esperança e renovação.\n" +
+                                                    "RustvaleN, outrora mergulhada em trevas e desespero, agora é banhada pela luz radiante do amuleto sagrado. A escuridão é dissipada, revelando a beleza e a\n" +
+                                                    "prosperidade da terra que há muito tempo estava perdida.\n\n" +
+                                                    "%s celebra sua vitória, sabendo que sua coragem e sacrifício trouxeram a redenção para RustvaleN. As pessoas da terra se unem em gratidão,\n" +
+                                                    "reconhecendo o heroína que o libertou das garras do mal.\n\n" +
+                                                    "Agora, com a luz restaurada, RustvaleN floresce mais uma vez. O legado do %s viverá para sempre na memória de todos, lembrando-os de que, mesmo\n" +
+                                                    "diante das mais sombrias adversidades, a esperança e a determinação podem vencer todas as trevas.\n\n"
+                                            ,personagemString, personagemString
+                                    );
+                                }
 
-System.out.println("<-- FIM DE JOGO -->");
+                                System.out.println("<-- FIM DE JOGO -->");
 
-System.out.println("<-- OBRIGADO POR JOGAR 👋👋👋👋 -->");
+                                System.out.println("<-- OBRIGADO POR JOGAR 👋👋👋👋 -->");
 
-
-
-
+                                break;
                             } else {
                                 System.out.println("A senha digitada é incorreta. A porta permanece trancada, revelando a importância de encontrar o código correto antes que seja tarde demais.\n");
                                 tentativas--;
@@ -874,4 +872,3 @@ System.out.println("<-- OBRIGADO POR JOGAR 👋👋👋👋 -->");
         sc.close();
     }
 }
-
