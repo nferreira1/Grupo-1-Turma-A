@@ -1,7 +1,7 @@
 # RustvaleN
 
 <p align="center">
-  <img src="./img/logo RustvaleN 2.png">
+  <img src="./img/Logo RustvaleN.png">
 </p>
 
 O **RustvaleN** é um projeto da disciplina Projeto Integrador I (PI) do curso de Tecnologia em Análise e Desenvolvimento de Sistemas do primeiro semestre, no Centro Universitário Senac - Santo Amaro visa, na medida do possível, promover a integração de conhecimentos das diversas disciplinas oferecidas em cada período correspondente a disciplina de PI. Dentro deste contexto, o projeto de PI I tem por objetivo primário aprimorar nosso conhecimento de Algoritmos e Programação, adquirido na respectiva disciplina, considerando também outras disciplinas cursadas no 1º período do curso.
@@ -26,7 +26,7 @@ Estas instruções permitirão que você faça uma cópia do jogo em sua própri
 
 
 ## 2. 📋 Pré-requisitos
-- [Java SE Development Kit 19.0.2](https://www.oracle.com/br/java/technologies/downloads/);
+- [Java SE Development Kit 17.0.7](https://www.oracle.com/br/java/technologies/downloads/#java17);
 - IDE de desenvolvimento Java, recomendamos o [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/) mas também é possivel usar o [Apache NetBeans](https://netbeans.apache.org/).
 
 
@@ -42,7 +42,7 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 - Versão do JDK:
   - Clique em Settings
   - Project Structure
-  - Em SDK, escolha a versão 19.0.2
+  - Em SDK, escolha a versão 17.0.7
   - Clique em OK
  
 Agora você já pode rodar o programa no IntelliJ IDEA 😊.
@@ -71,9 +71,9 @@ Nós usamos o [Git](https://git-scm.com/) para controle de versão. Para as vers
 
 
 ## 6. ✒️ Autores
-* **Nathan Ferreira** - *Trabalho Inicial* - [Desenvolvedor Back-End](https://www.linkedin.com/in/nathan-ferreira-97a355231/)
-* **Murilo Vieira** - *Documentação* - [Desenvolvedor Back-End](https://www.linkedin.com/in/murilo-augusto-vieira-957aab202/)
-* **Vinicius Sales** - *Documentação* - [Desenvolvedor Back-End](https://www.linkedin.com/in/vinisl/)
+* **Nathan Ferreira** - *Desenvolvimento do game* - [Desenvolvedor Back-End](https://www.linkedin.com/in/nathan-ferreira-97a355231/)
+* **Murilo Vieira** - *Desenvolvimento do game* - [Desenvolvedor Back-End](https://www.linkedin.com/in/murilo-augusto-vieira-957aab202/)
+* **Vinicius Sales** - *Desenvolvimento do game* - [Desenvolvedor Back-End](https://www.linkedin.com/in/vinisl/)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/nferreira1/Grupo-1-Turma-A/graphs/contributors) que participaram deste projeto.
 
