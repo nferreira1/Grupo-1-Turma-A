@@ -151,6 +151,162 @@ public class Main {
                         );
                         System.out.println("<-- PREPARAÇÃO DO ATAQUE -->\n");
 
+                        if (personagem == 1) {
+                            System.out.println(perguntasDilsons[0]);
+                            byte resposta1 = sc.nextByte();
+
+                            if (resposta1 == 5) {
+                                System.out.println("Aria aproveita o momento oportuno e utiliza sua magia dos ventos. Com um movimento rápido de suas mãos, ela invoca uma rajada de vento poderosa,\n" +
+                                        "que atinge em cheio o Chefe do Pântano. O monstro é jogado para trás, sua pele escamosa se contorcendo com dor.\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Aria, apesar de sua agilidade, é pega desprevenida pelo ataque rápido do monstro e não consegue desviar a tempo. O Chefe do Pântano a atinge com sua cauda,\n" +
+                                        "lançando-a para o chão com força.\n"
+                                );
+                                vidaPersonagem -= 20;
+
+                                System.out.printf("%s perdeu 20 pontos de vida.\n", personagemString);
+                            }
+
+                            if (vidaPersonagem <= 0) {
+                                System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Aria cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                        "A bravura e coragem de Aria serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                );
+
+                                System.out.println("<-- FIM DE JOGO -->");
+                                break;
+                            }
+
+                            System.out.println("Aria se prepara para dar outro golpe no monstro...\n");
+
+                            System.out.println(perguntasDilsons[1]);
+                            byte resposta2 = sc.nextByte();
+
+                            if (resposta2 == 3) {
+                                System.out.println("Com um gesto de suas mãos, Aria lança o redemoinho em direção ao Chefe do Pântano. O monstro é engolido pelo vento violento, lançado ao\n" +
+                                        "ar e atingido repetidamente pelas forças selvagens da natureza. O Chefe do Pântano, debilitado e confuso, é finalmente derrotado pela poderosa magia\n" +
+                                        "de Aria.\n\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Desta vez, Aria não consegue escapar totalmente do ataque. O Chefe do Pântano a atinge com sua garra afiada, causando um corte profundo em\n" +
+                                        "seu braço. Aria sente a dor aguda, mas não se deixa abater. Ela usa sua magia de cura para fechar a ferida.\n" +
+                                        "Apesar do dano sofrido, Aria se recompõe e concentra sua energia mágica. Ela canaliza sua determinação e lança uma poderosa onda de energia em direção\n" +
+                                        "ao Chefe do Pântano. O monstro é atingido em cheio e morre instantaneamente.\n\n"
+                                );
+                                vidaPersonagem -= 40;
+
+                                System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                            }
+                        }
+                        else if (personagem == 2) {
+                            System.out.println(perguntasDilsons[0]);
+                            byte resposta1 = sc.nextByte();
+
+                            if (resposta1 == 5) {
+                                System.out.println("Com um movimento rápido e preciso, Leon arremessa seus dardos em direção ao Chefe do Pântano. Os projéteis voam pelo ar, mirando nos pontos\n" +
+                                        "vulneráveis do monstro. Alguns dardos acertam seu alvo, perfurando a pele escamosa do monstro e causando danos significativos.\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Leon, apesar de sua agilidade, é pego desprevenido pelo ataque rápido do monstro e não consegue desviar a tempo. O Chefe do Pântano a atinge com sua cauda,\n" +
+                                        "lançando-a para o chão com força.\n"
+                                );
+                                vidaPersonagem -= 20;
+
+                                System.out.printf("%s perdeu 20 pontos de vida.\n", personagemString);
+                            }
+
+                            if (vidaPersonagem <= 0) {
+                                System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Leon cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                        "A bravura e coragem de Leon serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                );
+
+                                System.out.println("<-- FIM DE JOGO -->");
+                                break;
+                            }
+
+                            System.out.println("Leon se prepara para dar outro golpe no monstro...\n");
+
+                            System.out.println(perguntasDilsons[1]);
+                            byte resposta2 = sc.nextByte();
+
+                            if (resposta2 == 3) {
+                                System.out.println("Com um último movimento hábil, Leon lança um dardo envenenado diretamente no coração do monstro. O veneno se espalha rapidamente pelo corpo\n" +
+                                        "do Chefe do Pântano, enfraquecendo-o ainda mais. O monstro tomba no chão, derrotado pela perícia e estratégia de Leon.\n\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Desta vez, Leon não consegue escapar totalmente do ataque. O Chefe do Pântano a atinge com sua garra afiada, causando um corte profundo em\n" +
+                                        "seu braço. Leon sente a dor aguda, mas não se deixa abater.\n" +
+                                        "Com um olhar fixo no Chefe do Pântano, Leon canaliza suas últimas forças em um ataque derradeiro. Ele puxa um dardo especial, carregado com magia\n" +
+                                        "concentrada, e o lança com uma velocidade surpreendente em direção ao monstro. O dardo perfura o coração do Chefe do Pântano, atingindo sua fraqueza oculta.\n" +
+                                        "O monstro solta um rugido de dor e desespero enquanto a energia maligna que o corrompia é dissipada. O Chefe do Pântano se desintegra lentamente,\n" +
+                                        "desaparecendo em uma névoa escura.\n\n"
+                                );
+                                vidaPersonagem -= 40;
+
+                                System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                            }
+
+                        }
+                        else {
+                            System.out.println(perguntasDilsons[0]);
+                            byte resposta1 = sc.nextByte();
+
+                            if (resposta1 == 5) {
+                                System.out.println("Erguendo sua varinha mágica, Maya convoca uma explosão de palavras poderosas. Ela conjura uma tempestade de letras flamejantes que se dirigem em\n" +
+                                        "direção ao Chefe do Pântano. As letras dançam no ar, formando palavras de fogo que consomem o monstro com intensidade.\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Maya, apesar de sua agilidade, é pego desprevenido pelo ataque rápido do monstro e não consegue desviar a tempo. O Chefe do Pântano a atinge com sua cauda,\n" +
+                                        "lançando-a para o chão com força.\n"
+                                );
+                                vidaPersonagem -= 20;
+
+                                System.out.printf("%s perdeu 20 pontos de vida.\n", personagemString);
+                            }
+
+                            if (vidaPersonagem <= 0) {
+                                System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Maya cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                        "A bravura e coragem de Maya serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                );
+
+                                System.out.println("<-- FIM DE JOGO -->");
+                                break;
+                            }
+
+                            System.out.println("Maya se prepara para dar outro golpe no monstro...\n");
+
+                            System.out.println(perguntasDilsons[1]);
+                            byte resposta2 = sc.nextByte();
+
+                            if (resposta2 == 3) {
+                                System.out.println("Ela pronuncia uma palavra de poder absoluto, e um raio de luz brilhante é liberado de sua varinha. O raio atravessa o coração do Chefe do Pântano,\n" +
+                                        "dissipando a escuridão que o corrompia. O monstro se desintegra em fragmentos sombrios, que se dissipam no ar.\n\n"
+                                );
+
+                                System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                            } else {
+                                System.out.println("Desta vez, Maya não consegue escapar totalmente do ataque. O Chefe do Pântano a atinge com sua garra afiada, causando um corte profundo em\n" +
+                                        "seu braço. Maya sente a dor aguda, mas não se deixa abater.\n" +
+                                        "Com um olhar fixo no Chefe do Pântano, Maya canaliza suas últimas forças em um ataque derradeiro. Ela pronuncia uma palavra de poder absoluto, e um raio de luz\n" +
+                                        "brilhante é liberado de sua varinha. O raio atravessa o coração do Chefe do Pântano, dissipando a escuridão que o corrompia. O monstro se desintegra em fragmentos\n" +
+                                        "sombrios, que se dissipam no ar.\n\n"
+                                );
+                                vidaPersonagem -= 40;
+
+                                System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                            }
+                        }
+
                         break;
                     case 2:
                         System.out.println("<-- INFORMAÇÕES SOBRE O JOGO -->\n");
@@ -178,6 +334,7 @@ public class Main {
                                 "pois exige que acertem todos os desafios sem cometer nenhum erro. Qualquer deslize resultará em uma derrota imediata. Essa dificuldade extrema incentiva os jogadores a se concentrarem, melhorarem suas\n" +
                                 "habilidades e executarem estratégias com precisão para avançar com sucesso no jogo. A sensação de conquista ao superar cada desafio sem errar é recompensadora para os amantes do perfeccionismo.\n\n"
                         );
+
                         break;
                     case 3:
                         System.out.println("<-- PERSONAGENS -->\n");
