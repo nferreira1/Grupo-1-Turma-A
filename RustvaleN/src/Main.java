@@ -153,6 +153,31 @@ public class Main {
 
                         break;
                     case 2:
+                        System.out.println("<-- INFORMAÇÕES SOBRE O JOGO -->\n");
+
+                        System.out.println("O RustvaleN é um projeto da disciplina Projeto Integrador I (PI) do curso de Tecnologia em Análise e Desenvolvimento de Sistemas do primeiro " + "\n" +
+                                "semestre, no Centro Universitário Senac - Santo Amaro visa, na medida do possível, promover a integração de conhecimentos das diversas disciplinas oferecidas " + "\n" +
+                                "em cada período correspondente a disciplina de PI. Dentro deste contexto, o projeto de PI I tem por objetivo primário aprimorar nosso conhecimento de Algoritmos " + "\n" +
+                                "e Programação, adquirido na respectiva disciplina, considerando também outras disciplinas cursadas no 1º período do curso.\n" +
+                                "Por fim, vale destacar que na avaliação do projeto o professor considerou fortemente a aplicação dos elementos de desenvolvimento abordados na disciplina \n" +
+                                "Algoritmos e Programação durante o 1º período, assim como a aplicação da abordagem Design Thinking e utilização das ferramentas Trello e GitHub.\n"
+                        );
+
+                        System.out.println("<-- INFORMAÇÕES SOBRE A DIFICULDADE DO JOGO -->\n");
+
+                        System.out.println("1 - Fácil: A vida do personagem é definida para 999 pontos de vida, o que significa que é impossível perder durante o jogo. Isso permite que os jogadores aproveitem mais a\n" +
+                                "história e a experiência de jogo, sem se preocupar em perder suas vidas.\n\n"
+                        );
+
+                        System.out.println("2 - Normal: A vida do personagem é definida para 100 pontos de vida, o que significa que é possível de perder durante o jogo. A dificuldade se mantém constante ao longo da jornada,\n" +
+                                "proporcionando uma experiência desafiadora desde o início até o final. Conforme o personagem enfrenta chefes e realiza desafios, ele pode perder vida caso cometa erros ou não tenha um desempenho\n" +
+                                "satisfatório. Essa mecânica adiciona um elemento de tensão e estratégia, incentivando os jogadores a se concentrarem e aperfeiçoarem suas habilidades para progredir no jogo com sucesso.\n\n"
+                        );
+
+                        System.out.println("3 - Difícil: A vida do personagem é definida para 1 ponto de vida, o que significa que é possível perder durante o jogo. Essa configuração desafia os jogadores que buscam a perfeição,\n" +
+                                "pois exige que acertem todos os desafios sem cometer nenhum erro. Qualquer deslize resultará em uma derrota imediata. Essa dificuldade extrema incentiva os jogadores a se concentrarem, melhorarem suas\n" +
+                                "habilidades e executarem estratégias com precisão para avançar com sucesso no jogo. A sensação de conquista ao superar cada desafio sem errar é recompensadora para os amantes do perfeccionismo.\n\n"
+                        );
                         break;
                     case 3:
                         System.out.println("<-- PERSONAGENS -->\n");
