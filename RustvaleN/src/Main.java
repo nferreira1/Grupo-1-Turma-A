@@ -36,6 +36,7 @@ public class Main {
 
                 switch (iniciar) {
                     case 1:
+
                         // DESAFIOS DILSONS, CHEFE DO PÂNTANO
                         String[] perguntasDilsons = {
                                 "Quantas vezes o loop for executa no código a seguir?\n\nfor (int i = 0; i < 5; i++) {}",
@@ -58,10 +59,12 @@ public class Main {
                                 "Qual a saída do código a seguir?\n\nint[] array = {1, 2, 3, 4, 5};\nint contador = 0;\nfor (int i = 0; i < array.length; i++) {\n    if (array[i] > 2) {\n        contador++;\n    }\n}\nSystem.out.println(contador);",
                                 "Qual a saída do código a seguir?\n\nint[] array = {1, 2, 3, 4, 5};\nint soma = 0;\nfor (int i = 0; i < array.length; i++) {\n    if (array[i] % 2 == 0) {\n        soma += array[i];\n    }\n}\nSystem.out.println(soma);"
                         };
+
                         String[] respostasClarus = {
                                 "a) 2, 4 \nb) 1, 3, 5 \nc) 3\nd) 1, 5, 4\n",
                                 "a) 5 \nb) 6 \nc) 2 \nd) 16\n",
                         };
+
                         System.out.println("Era uma vez, em um reino chamado RustvaleN, um lugar repleto de magia e aventuras. Por séculos, RustvaleN prosperou em paz,\n" +
                                 "até que um mal ancestral despertou nas profundezas do subterrâneo. Escuridão e caos começaram a se espalhar, ameaçando engolir o reino em trevas.\n" +
                                 "Aria, Leon e Maya, três heróis valentes e destinados, foram chamados pelos deuses para enfrentar a terrível ameaça que pairava sobre RustvaleN.\n" +
@@ -122,6 +125,32 @@ public class Main {
                             personagemString = "Maya";
                         }
 
+                        // INÍCIO DO JOGO
+                        if (personagem == 2) {
+                            System.out.printf("%s começou sua jornada na cidade de Edvilen, onde recebeu a primeira missão: encontrar o Amuleto da Luz, uma relíquia antiga capaz de banir as trevas.\n" +
+                                            "Ele deve embarcar em uma jornada perigosa através das Terras Proibidas, uma região desolada e repleta de monstros.\n\n"
+                                    , personagemString
+                            );
+                        } else {
+                            System.out.printf("%s começou sua jornada na cidade de Edvilen, onde recebeu a primeira missão: encontrar o Amuleto da Luz, uma relíquia antiga capaz de banir as trevas.\n" +
+                                            "Ela deve embarcar em uma jornada perigosa através das Terras Proibidas, uma região desolada e repleta de monstros.\n\n"
+                                    , personagemString
+                            );
+                        }
+
+                        System.out.printf("No caminho, %s enfrenta seu primeiro desafio, Dilsons, o Chefe do Pântano. Uma criatura terrível, meio humanoide, meio serpente, guarda a entrada para\n" +
+                                        "as Terras Proibidas. Com sua agilidade e poder venenoso, o Chefe do Pântano tenta impedir %s de avançar.\n\n"
+                                , personagemString, personagemString
+                        );
+
+                        // CAPÍTULO 01 - BATALHA NO PÂNTANO
+                        System.out.println("<-- INÍCIO DA BATALHA -->\n");
+                        System.out.printf("O Chefe do Pântano avança rapidamente em direção a %s. %s, ágil, antecipa o ataque iminente e se esquiva habilmente. Com uma destreza impressionante, %s\n" +
+                                        "desvia dos movimentos serpenteantes do monstro, enquanto se prepara para contra-atacar.\n\n"
+                                , personagemString, personagemString, personagemString
+                        );
+                        System.out.println("<-- PREPARAÇÃO DO ATAQUE -->\n");
+
                         break;
                     case 2:
                         break;
@@ -136,43 +165,48 @@ public class Main {
                                 "otimizar suas estruturas de repetições. Isso a deixava suscetível a ficar sobrecarregada pelo peso da expectativa e podia afetar sua tomada de decisões rápidas\n" +
                                 "durante batalhas intensas. Além disso, sua magia era menos eficaz contra inimigos resistentes ao fogo ou capazes de extinguir chamas com facilidade.\n\n"
                         );
-// LEON
+
+                        // LEON
                         System.out.println("Leon, o Arqueiro Mestre dos Dardos, foi escolhido pelos deuses para enfrentar essa terrível ameaça. Ele possuía habilidades excepcionais com arcos e\n" +
                                 "flechas e um conhecimento profundo sobre o uso de arrays. Seu ponto forte estava em sua capacidade de utilizar arrays para armazenar e manipular informações\n" +
                                 "estratégicas, permitindo-lhe tomar decisões precisas e disparar ataques precisos contra seus inimigos. No entanto, sua fraqueza residia em sua vulnerabilidade\n" +
                                 "à falta de visão ampla do cenário. Leon era um especialista em detalhes minuciosos e análises precisas, mas isso às vezes o impedia de ver a imagem completa.\n" +
                                 "Essa fraqueza o tornava suscetível a estratégias de combate imprevisíveis e a situações caóticas onde a organização estrita dos arrays era menos eficaz.\n\n"
                         );
-// MAYA
+
+                        // MAYA
                         System.out.println("Maya, a Maga das Palavras, ela era conhecida por sua habilidade excepcional em trabalhar com textos e realizar operações complexas em cadeias de\n" +
                                 "caracteres. O ponto forte de Maya estava em sua capacidade de manipular strings de maneira eficiente e realizar transformações poderosas. Ela podia dividir,\n" +
                                 "combinar, substituir e formatar strings com facilidade, facilitando a resolução de problemas relacionados à manipulação de texto. Sua expertise em manipulação\n" +
                                 "de strings a tornava uma programadora talentosa nesse aspecto. No entanto, sua fraqueza estava relacionada à dificuldade em lidar com problemas de localização\n" +
                                 "e internacionalização. Maya tinha dificuldade em adaptar strings a diferentes idiomas, formatos de data e moedas, o que a deixava vulnerável a problemas de\n" +
                                 "compatibilidade em aplicações multilíngues.\n\n"
+                        );
+
                         break;
                     case 4:
                         System.out.println("<-- CHEFES -->\n");
 
-// DILSONS, CHEFE DO PÂNTANO
+                        // DILSONS, CHEFE DO PÂNTANO
                         System.out.println("Dilsons, O Chefe do Pântano é uma criatura meio humanoide, meio serpente, que guarda a entrada das Terras Proibidas. Sua força e poder venenoso representam um\n" +
                                 "desafio para os heróis. No entanto, o Chefe do Pântano possui uma fraqueza peculiar: estruturas de repetição. Padrões repetitivos de ataques confundem\n" +
                                 "e enfraquecem o chefe.\n\n"
                         );
 
-// REDIAS, O LORDE DAS SOMBRAS
+                        // REDIAS, O LORDE DAS SOMBRAS
                         System.out.println("Redias, O Lorde das Sombras, um feiticeiro poderoso e corrompido pelo Flagelo das Trevas, é o segundo chefe que os heróis encontram em sua jornada.\n" +
                                 "Apesar de sua habilidade em utilizar magias sombrias e invocar criaturas das trevas, o Lorde das Sombras possui uma fraqueza singular: arrays. A manipulação de\n" +
                                 "conjuntos organizados de informações, como arrays, interfere na sua capacidade de conjurar feitiços e controlar as criaturas ao seu redor. Ao explorar essa fraqueza,\n"+
                                 "os Guardiões Mágicos conseguem desequilibrar os poderes do Lorde das Sombras e derrotá-lo.\n\n"
                         );
 
-// CLARUS, O DRAGÃO SOMBRIO
+                        // CLARUS, O DRAGÃO SOMBRIO
                         System.out.println("Clarus, O Dragão Sombrio, uma terrível criatura corrompida pelo Flagelo das Trevas, é o último desafio enfrentado pelos Guardiões Mágicos.\n" +
                                 "Este poderoso dragão possui escamas resistentes e ataques de fogo devastadores, mas tem uma fraqueza surpreendente: arrays e estruturas de repetições.\n"+
                                 "A capacidade dos Guardiões de utilizar conjuntos organizados de informações e realizar ações repetitivas enfraquece as defesas do Dragão Sombrio e o\n" +
                                 "deixa suscetível a ataques. Ao explorar essa fraqueza estratégica, os heróis conseguem enfraquecer o dragão e banir a escuridão que o consome.\n\n"
                         );
+
                         break;
                     case 5:
                         System.out.print("<-- JOGO ENCERRADO, ATÉ LOGO! 👋👋👋 -->");
