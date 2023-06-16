@@ -307,27 +307,86 @@ public class Main {
                             }
                         }
 
-System.out.printf("Após derrotar o Chefe do Pântano, %s examina cuidadosamente o local da batalha, em busca de pistas ou objetos que possa ajudár em sua\n" +
-"jornada. Entre a vegetação encharcada e a lama do pântano, %s encontra um pergaminho antigo preso em um galho retorcido.\n" +
-"A abrir o pergaminho com cuidado, %s depara-se com uma mensagem enigmática escrita com uma letra elegante e curvilínea. As palavras são as seguintes:\n" +
-"\"A coragem é a Chave para acEnder o camiNho Da esperAnça\" \n\n"
-, personagemString, personagemString, personagemString
-);
+                        System.out.printf("Após derrotar o Chefe do Pântano, %s examina cuidadosamente o local da batalha, em busca de pistas ou objetos que possa ajudár em sua\n" +
+                                        "jornada. Entre a vegetação encharcada e a lama do pântano, %s encontra um pergaminho antigo preso em um galho retorcido.\n" +
+                                        "A abrir o pergaminho com cuidado, %s depara-se com uma mensagem enigmática escrita com uma letra elegante e curvilínea. As palavras são as seguintes:\n" +
+                                        "\"A coragem é a Chave para acEnder o camiNho Da esperAnça\" \n\n"
+                                , personagemString, personagemString, personagemString
+                        );
 
-System.out.printf("Com Dilsons, O Chefe do Pântano derrotado, %s sente um misto de alívio e determinação renovada. Sabendo que ainda há um longo caminho pela frente, %s\n" +
-"se prepara para o próximo desafio.\n\n"
-, personagemString, personagemString
-);
+                        System.out.printf("Com Dilsons, O Chefe do Pântano derrotado, %s sente um misto de alívio e determinação renovada. Sabendo que ainda há um longo caminho pela frente, %s\n" +
+                                        "se prepara para o próximo desafio.\n\n"
+                                , personagemString, personagemString
+                        );
 
-System.out.printf("Ao chegar diante da imponente porta que leva às Terras Proibidas, %s encontra um painel com seis slots vazios. %s sabe que para abrir a porta e\n" +
-"prosseguir em sua jornada, é necessário inserir a senha correta.\n\n"
-, personagemString, personagemString
-);
+                        System.out.printf("Ao chegar diante da imponente porta que leva às Terras Proibidas, %s encontra um painel com seis slots vazios. %s sabe que para abrir a porta e\n" +
+                                        "prosseguir em sua jornada, é necessário inserir a senha correta.\n\n"
+                                , personagemString, personagemString
+                        );
 
-System.out.printf("%s percebe que a porta para as Terras Proibidas não é apenas uma passagem física, mas um desafio que testará sua habilidade em decifrar a senha correta.\n" +
-"Ao analisar o painel com os seis slots vazios, %s sabe que têm apenas três tentativas para inserir a senha correta.\n\n"
-, personagemString, personagemString
-);
+                        System.out.printf("%s percebe que a porta para as Terras Proibidas não é apenas uma passagem física, mas um desafio que testará sua habilidade em decifrar a senha correta.\n" +
+                                        "Ao analisar o painel com os seis slots vazios, %s sabe que têm apenas três tentativas para inserir a senha correta.\n\n"
+                                , personagemString, personagemString
+                        );
+
+                        byte tentativas = 3;
+
+                        do {
+                            System.out.print("Insira a senha: ");
+                            String senha = sc.next();
+
+                            if (senha.equalsIgnoreCase("ACENDA")) {
+                                System.out.printf("Assim que a última letra é inserida, um brilho intenso irrompe dos slots, revelando a palavra \"ACENDA\". A porta, então, se abre majestosamente,\n" +
+                                                "convidando %s a adentrar as Terras Proibidas, onde enfrentará novos desafios e perigos em sua missão de combater as trevas que assolam RustvaleN.\n\n"
+                                        , personagemString
+                                );
+
+                                System.out.printf("Ao adentrar as Terras Proibidas, %s descobre que o segundo Chefe, conhecido como Redias, O Lorde das Sombras, está espalhando a escuridão em uma antiga\n" +
+                                                "fortaleza. O Lorde das Sombras é um feiticeiro poderoso que se tornou corrupto pelo Flagelo das Trevas. Ele utiliza magias sombrias e invoca criaturas das trevas\n" +
+                                                "para enfrentar os heróis.\n"
+                                        , personagemString
+                                );
+
+                                // CAPÍTULO 02 - BATALHA NAS TERRAS SOMBRIAS
+                                System.out.println("<-- INÍCIO DA BATALHA -->\n");
+
+                                if (personagem == 2) {
+                                    System.out.printf("O Lorde das Sombras concentra seu poder sombrio e lança um feitiço em direção a %s, visando envolvê-lo em um véu de trevas. %s, habilidoso e\n" +
+                                                    "destemido, utiliza sua agilidade para se esquivar dos raios sombrios que se aproximam perigosamente. Com movimentos graciosos, ele escapa por entre as\n" +
+                                                    "sombras, pronto para retaliar e enfrentar o poderoso Lorde das Sombras.\n\n"
+                                            , personagemString, personagemString
+                                    );
+                                } else {
+                                    System.out.printf("O Lorde das Sombras concentra seu poder sombrio e lança um feitiço em direção a %s, visando envolvê-la em um véu de trevas. %s, habilidosa e\n" +
+                                                    "destemida, utiliza sua agilidade para se esquivar dos raios sombrios que se aproximam perigosamente. Com movimentos graciosos, ela escapa por entre as\n" +
+                                                    "sombras, pronta para retaliar e enfrentar o poderoso Lorde das Sombras.\n\n"
+                                            , personagemString, personagemString
+                                    );
+                                }
+
+                                System.out.println("<-- PREPARAÇÃO DO ATAQUE -->\n");
+
+                                
+
+
+
+                            } else {
+                                System.out.println("A senha digitada é incorreta. A porta permanece trancada, revelando a importância de encontrar o código correto antes que seja tarde demais.\n");
+                                tentativas--;
+                            }
+
+                            if (tentativas == 0) {
+                                System.out.printf("Com a terceira tentativa fracassada, a porta se fecha irrevogavelmente, impedindo o acesso às Terras Proibidas. O destino de RustavaleN permanece\n" +
+                                                "envolto em trevas, enquanto a esperança de %s desvanece lentamente.\n\n"
+                                        , personagemString
+                                );
+
+                                System.out.println("<-- FIM DE JOGO -->");
+
+                                break;
+                            }
+                        } while (tentativas != 0);
+
                         break;
                     case 2:
                         System.out.println("<-- INFORMAÇÕES SOBRE O JOGO -->\n");
@@ -355,26 +414,6 @@ System.out.printf("%s percebe que a porta para as Terras Proibidas não é apena
                                 "pois exige que acertem todos os desafios sem cometer nenhum erro. Qualquer deslize resultará em uma derrota imediata. Essa dificuldade extrema incentiva os jogadores a se concentrarem, melhorarem suas\n" +
                                 "habilidades e executarem estratégias com precisão para avançar com sucesso no jogo. A sensação de conquista ao superar cada desafio sem errar é recompensadora para os amantes do perfeccionismo.\n\n"
                         );
-
-byte tentativas = 3;
-
-do {
-System.out.print("Insira a senha: ");
-String senha = sc.next();
- 
- 
- 
-if (tentativas == 0) {
-System.out.printf("Com a terceira tentativa fracassada, a porta se fecha irrevogavelmente, impedindo o acesso às Terras Proibidas. O destino de RustavaleN permanece\n" +
-"envolto em trevas, enquanto a esperança de %s desvanece lentamente.\n\n"
-, personagemString
-);
-
-System.out.println("<-- FIM DE JOGO -->");
-
-break;
-}
-} while (tentativas != 0);
 
                         break;
                     case 3:
