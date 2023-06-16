@@ -307,6 +307,27 @@ public class Main {
                             }
                         }
 
+System.out.printf("Após derrotar o Chefe do Pântano, %s examina cuidadosamente o local da batalha, em busca de pistas ou objetos que possa ajudár em sua\n" +
+"jornada. Entre a vegetação encharcada e a lama do pântano, %s encontra um pergaminho antigo preso em um galho retorcido.\n" +
+"A abrir o pergaminho com cuidado, %s depara-se com uma mensagem enigmática escrita com uma letra elegante e curvilínea. As palavras são as seguintes:\n" +
+"\"A coragem é a Chave para acEnder o camiNho Da esperAnça\" \n\n"
+, personagemString, personagemString, personagemString
+);
+
+System.out.printf("Com Dilsons, O Chefe do Pântano derrotado, %s sente um misto de alívio e determinação renovada. Sabendo que ainda há um longo caminho pela frente, %s\n" +
+"se prepara para o próximo desafio.\n\n"
+, personagemString, personagemString
+);
+
+System.out.printf("Ao chegar diante da imponente porta que leva às Terras Proibidas, %s encontra um painel com seis slots vazios. %s sabe que para abrir a porta e\n" +
+"prosseguir em sua jornada, é necessário inserir a senha correta.\n\n"
+, personagemString, personagemString
+);
+
+System.out.printf("%s percebe que a porta para as Terras Proibidas não é apenas uma passagem física, mas um desafio que testará sua habilidade em decifrar a senha correta.\n" +
+"Ao analisar o painel com os seis slots vazios, %s sabe que têm apenas três tentativas para inserir a senha correta.\n\n"
+, personagemString, personagemString
+);
                         break;
                     case 2:
                         System.out.println("<-- INFORMAÇÕES SOBRE O JOGO -->\n");
