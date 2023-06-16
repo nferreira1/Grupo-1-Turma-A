@@ -366,7 +366,202 @@ public class Main {
 
                                 System.out.println("<-- PREPARAÇÃO DO ATAQUE -->\n");
 
-                                
+                                if (personagem == 1) {
+                                    System.out.println(perguntasRedias[0]);
+                                    System.out.println(respostasRedias[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("a")) {
+                                        System.out.println("Aria, determinada a confrontar o Lorde das Sombras, concentra sua energia mágica e lança um feitiço luminoso em direção ao seu inimigo. Um raio de luz cortante é\n" +
+                                                "disparado com precisão, atingindo o Lorde das Sombras em cheio. O feitiço revela a verdadeira forma do Lorde das Sombras, enfraquecendo suas defesas e expondo sua vulnerabilidade.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Enquanto Aria busca uma oportunidade para atacar o Lorde das Sombras, ela antecipa seus movimentos e lança um poderoso raio sombrio em sua direção. Aria é pega de surpresa,\n" +
+                                                "incapaz de se defender a tempo, e é atingida em cheio pelo ataque.\n"
+                                        );
+                                        vidaPersonagem -= 40;
+
+                                        System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Aria cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Aria serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.println("Aria se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasRedias[1]);
+                                    System.out.println(respostasRedias[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("d")) {
+                                        System.out.println("Aria libera um feixe de luz brilhante, uma explosão de energia luminosa que envolve o Lorde das Sombras. Seu ataque final é implacável, atravessando as defesas sombrias\n" +
+                                                "e atingindo em cheio o coração do feiticeiro corrompido. O Lorde das Sombras é consumido pela luz, seu poder enfraquecido até ser completamente derrotado.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Aria, focada em seu objetivo de derrotar o Lorde das Sombras, se prepara para seu ataque final. Porém, em um momento de descuido, o feiticeiro maligno lança um feitiço\n" +
+                                                "poderoso em sua direção, atingindo-a em cheio. Aria é empurrada para trás, sentindo a dor lancinante do golpe.\n"
+                                        );
+                                        vidaPersonagem -= 60;
+
+                                        System.out.printf("%s perdeu 60 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Aria cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Aria serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.println("Mesmo ferida, ela se levanta determinada e lança um poderoso feixe de luz, aniquilando o Lorde das Sombras de uma vez por todas. Aria triunfa sobre a escuridão e continua sua jornada\n" +
+                                            "para salvar Rustvalen.\n"
+                                    );
+                                }
+                                else if (personagem == 2) {
+                                    System.out.println(perguntasRedias[0]);
+                                    System.out.println(respostasRedias[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("a")) {
+                                        System.out.println("Leon, o Mestre dos Dardos, concentra sua energia e mira com precisão mortal. Com um rápido movimento, ele lança seu dardo, que corta o ar em direção ao Lorde das Sombras.\n" +
+                                                "O projétil acerta em cheio, perfurando a escuridão e fazendo o feiticeiro tremer sob o impacto.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Enquanto Leon busca uma oportunidade para atacar o Lorde das Sombras, ele antecipa seus movimentos e lança um poderoso raio sombrio em sua direção. Leon é pego de surpresa,\n" +
+                                                "incapaz de se defender a tempo, e é atingido em cheio pelo ataque.\n"
+                                        );
+                                        vidaPersonagem -= 40;
+
+                                        System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-o gravemente ferido. Com um último suspiro, Leon cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Leon serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.println("Leon se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasRedias[1]);
+                                    System.out.println(respostasRedias[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("d")) {
+                                        System.out.println("Leon, com sua destreza inigualável, aproveita o momento de fraqueza e realiza seu golpe final. Ele lança múltiplos dardos com uma velocidade impressionante, acertando o Lorde das Sombras\n" +
+                                                "em pontos vitais. O feiticeiro é consumido pela escuridão e cai derrotado diante da determinação de Leon.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Leon, focado em seu objetivo de derrotar o Lorde das Sombras, se prepara para seu ataque final. Porém, em um momento de descuido, o feiticeiro maligno lança um feitiço\n" +
+                                                "poderoso em sua direção, atingindo-o em cheio. Leon é empurrada para trás, sentindo a dor lancinante do golpe.\n"
+                                        );
+                                        vidaPersonagem -= 60;
+
+                                        System.out.printf("%s perdeu 60 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-o gravemente ferido. Com um último suspiro, Leon cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Leon serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.print("Mesmo ferido, ele se levanta determinado e lança um poderoso dardo de luz, aniquilando o Lorde das Sombras de uma vez por todas. Leon triunfa sobre a escuridão e continua sua jornada\n" +
+                                            "para salvar Rustvalen.\n"
+                                    );
+
+                                }
+                                else {
+                                    System.out.println(perguntasRedias[0]);
+                                    System.out.println(respostasRedias[0]);
+                                    String resposta1 = sc.next();
+
+                                    if (resposta1.equalsIgnoreCase("a")) {
+                                        System.out.println("Maya, a Maga das Palavras, concentra sua energia mágica e pronuncia palavras poderosas que ecoam pelo campo de batalha. Ela conjura uma tempestade de letras e palavras encantadas,\n" +
+                                                "lançando-as em direção ao Lorde das Sombras. As palavras se transformam em projéteis brilhantes, atingindo o feiticeiro maligno e enfraquecendo seus poderes sombrios.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Enquanto Maya busca uma oportunidade para atacar o Lorde das Sombras, ela antecipa seus movimentos e lança um poderoso raio sombrio em sua direção. Maya é pega de surpresa,\n" +
+                                                "incapaz de se defender a tempo, e é atingida em cheio pelo ataque."
+                                        );
+                                        vidaPersonagem -= 40;
+
+                                        System.out.printf("%s perdeu 40 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-a gravemente ferida. Com um último suspiro, Maya cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Maya serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.println("Maya se prepara para dar outro golpe no monstro...\n");
+
+                                    System.out.println(perguntasRedias[1]);
+                                    System.out.println(respostasRedias[1]);
+                                    String resposta2 = sc.next();
+
+                                    if (resposta2.equalsIgnoreCase("d")) {
+                                        System.out.println("Aria libera um feixe de luz brilhante, uma explosão de energia luminosa que envolve o Lorde das Sombras. Seu ataque final é implacável, atravessando as defesas sombrias\n" +
+                                                "e atingindo em cheio o coração do feiticeiro corrompido. O Lorde das Sombras é consumido pela luz, seu poder enfraquecido até ser completamente derrotado.\n"
+                                        );
+
+                                        System.out.printf("Pontos de vida: %d\n", vidaPersonagem);
+                                    } else {
+                                        System.out.println("Maya, a Maga das Palavras, é atingida por um poderoso feitiço sombrio lançado pelo Lorde das Sombras. Ela sente a energia negra se espalhando por seu corpo, enfraquecendo-a\n" +
+                                                "momentaneamente.\n"
+                                        );
+                                        vidaPersonagem -= 60;
+
+                                        System.out.printf("%s perdeu 60 pontos de vida.\n", personagemString);
+                                    }
+
+                                    if (vidaPersonagem <= 0) {
+                                        System.out.println("O impacto é devastador, drenando sua energia vital e deixando-o gravemente ferido. Com um último suspiro, Leon cai no chão, seus olhos se fecham e sua jornada chega a um fim trágico.\n" +
+                                                "A bravura e coragem de Leon serão lembradas, e seu sacrifício servirá de motivação para os próximos heróis continuarem a luta contra as forças das trevas."
+                                        );
+
+                                        System.out.println("<-- FIM DE JOGO -->");
+                                        break;
+                                    }
+
+                                    System.out.println("Mas em um último esforço de determinação, Maya canaliza suas últimas reservas de magia. Com uma explosão de energia, ela conjura um encantamento devastador que envolve o\n" +
+                                            "Lorde das Sombras em chamas luminosas. O feiticeiro corrupto grita de dor e desespero enquanto é consumido pelas chamas da purificação. Com sua derrota, a escuridão se dissipa e a luz\n" +
+                                            "retorna às Terras Proibidas.\n"
+                                    );
+                                }
+
+                                System.out.printf("Após derrotar o Lorde das Sombras, %s sente uma sensação de triunfo e esperança se renovando em seu coração. Sabendo que a batalha final\n" +
+                                                "para recuperar a luz em RustvaleN se aproxima, %s se prepara para a última e mais desafiadora etapa de sua jornada.\n\n"
+                                        , personagemString, personagemString
+                                );
 
 
 
