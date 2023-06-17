@@ -32,7 +32,8 @@ public class Main {
                         "2 - INFORMAÇÕES\n" +
                         "3 - PERSONAGENS\n" +
                         "4 - CHEFES\n" +
-                        "5 - ENCERRAR JOGO\n"
+                        "5 - CRÉDITOS\n" +
+                        "6 - ENCERRAR JOGO\n"
                 );
                 iniciar = sc.nextByte();
 
@@ -860,6 +861,12 @@ public class Main {
 
                         break;
                     case 5:
+                        System.out.print("<-- CRÉDITOS -->\n\n");
+                        System.out.print("Murilo Augusto Vieira\n");
+                        System.out.print("Nathan Henrique Vieira Ferreira\n");
+                        System.out.print("Vinicius Sales Lima\n\n");
+                        break;
+                    case 6:
                         System.out.print("<-- JOGO ENCERRADO, ATÉ LOGO! 👋👋👋 -->");
                         break;
                     default:
@@ -869,7 +876,7 @@ public class Main {
                 System.out.println("\nCaracteres não permitidos, insira apenas números!\n");
                 sc.nextLine();
             }
-        } while (iniciar != 1 && iniciar != 5);
+        } while (iniciar != 1 && iniciar != 6);
 
         sc.close();
     }
