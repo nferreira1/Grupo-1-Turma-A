@@ -74,7 +74,7 @@ Nós usamos o [Git](https://git-scm.com/) para controle de versão.
 ## 6. ✒️ Autores
 * **Nathan Ferreira** - *Desenvolvimento* - [Estagiário em Desenvolvimento e Suporte](https://www.linkedin.com/in/nathan-ferreira-97a355231/)
 * **Murilo Vieira** - *Desenvolvimento* - [Programador I](https://www.linkedin.com/in/murilo-augusto-vieira-957aab202/)
-* **Vinicius Sales** - *Desenvolvimento* - [Estagiário em Planejamento e B2C/VP Négocios](https://www.linkedin.com/in/vinisl/)
+* **Vinicius Sales** - *Desenvolvimento* - [Estagiário em Planejamento B2C/VP Négocios](https://www.linkedin.com/in/vinisl/)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/nferreira1/Grupo-1-Turma-A/graphs/contributors) que participaram deste projeto.
 
