@@ -68,13 +68,13 @@ Agora você já pode rodar o programa no Apache NetBeans 😊.
 
 
 ## 5. 📌 Versão
-Nós usamos o [Git](https://git-scm.com/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto).
+Nós usamos o [Git](https://git-scm.com/) para controle de versão.
 
 
 ## 6. ✒️ Autores
-* **Nathan Ferreira** - *Desenvolvimento* - [Internship in Development and Support](https://www.linkedin.com/in/nathan-ferreira-97a355231/)
+* **Nathan Ferreira** - *Desenvolvimento* - [Estagiário em Desenvolvimento e Suporte](https://www.linkedin.com/in/nathan-ferreira-97a355231/)
 * **Murilo Vieira** - *Desenvolvimento* - [Programador I](https://www.linkedin.com/in/murilo-augusto-vieira-957aab202/)
-* **Vinicius Sales** - *Desenvolvimento* - [Internship Planning B2C](https://www.linkedin.com/in/vinisl/)
+* **Vinicius Sales** - *Desenvolvimento* - [Estagiário em Planejamento e B2C/VP Négocios](https://www.linkedin.com/in/vinisl/)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/nferreira1/Grupo-1-Turma-A/graphs/contributors) que participaram deste projeto.
 
